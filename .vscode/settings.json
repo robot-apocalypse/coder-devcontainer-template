@@ -1,0 +1,64 @@
+{
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "/usr/bin/zsh",
+      "args": ["-l"]
+    }
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.suggest.autoImports": true,
+  "files.associations": {
+    "*.liquid": "liquid",
+    "*.toml": "toml"
+  },
+  "emmet.includeLanguages": {
+    "liquid": "html"
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/.firebase": true,
+    "**/.devcontainer/firebase-cache": true,
+    "**/.devcontainer/npm-cache": true
+  },
+  "files.exclude": {
+    "**/.devcontainer/firebase-cache": true,
+    "**/.devcontainer/npm-cache": true
+  },
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "javascript.preferences.includePackageJsonAutoImports": "auto",
+  "eslint.workingDirectories": ["shopify"],
+  "prettier.configPath": ".prettierrc",
+  "firebase.hosting.source": "./shopify/build",
+  "firebase.functions.source": "./shopify/functions",
+  "terraform.languageServer": {
+    "enabled": true,
+    "args": ["serve"]
+  },
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#1e1e1e",
+    "terminal.foreground": "#d4d4d4"
+  },
+  "remote.autoForwardPorts": false
+}

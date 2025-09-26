@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    "graphql.vscode-graphql",
+    "shopify.polaris-for-vscode",
+    "mikestead.dotenv",
+    "wholroyd.jinja",
+    "oderwat.indent-rainbow",
+    "redhat.vscode-yaml",
+    "eamodio.gitlens",
+    "GitHub.vscode-pull-request-github",
+    "github.vscode-github-actions",
+
+    // --- Language/Framework Specific ---
+    "ms-vscode.vscode-typescript-next",
+    "GraphQL.vscode-graphql",
+
+    // --- Your AI Agent ---
+    "kilocode.kilo-code",
+    
+    // --- Terraform (Official) ---
+    "hashicorp.terraform",
+
+    // --- UI/Theme ---
+    "vscode-icons-team.vscode-icons"
+  ]
+}

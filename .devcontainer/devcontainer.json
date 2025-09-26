@@ -1,0 +1,25 @@
+{
+  "name": "TEMPLATE",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": {
+      "NODE_VERSION": "22",
+      "TERRAFORM_VERSION": "1.6.6",
+      "REPO_NAME": "${localWorkspaceFolderBasename}"
+    }
+  },
+  "features": {
+    "ghcr.io/coder/devcontainer-features/code-server:1": {
+      "port": 3000,
+      "auth": "none",
+      "workspace": "${containerWorkspaceFolder}"
+    }
+  },
+  
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "remoteUser": "vscode",
+
+  "workspaceFolder": "/${localWorkspaceFolderBasename}",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind,consistency=cached"
+}
