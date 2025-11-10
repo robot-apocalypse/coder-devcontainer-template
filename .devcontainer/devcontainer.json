@@ -4,7 +4,7 @@
     "dockerfile": "Dockerfile",
     "context": "..",
     "args": {
-      "NODE_VERSION": "22",
+      "NODE_VERSION": "22.20.0",
       "TERRAFORM_VERSION": "1.6.6",
       "REPO_NAME": "${localWorkspaceFolderBasename}"
     }
